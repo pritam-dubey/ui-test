@@ -1,0 +1,131 @@
+body {
+    background-color: #EFEFEF;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+}
+
+.cell-container {
+    display: flex;
+    color: #FFFFFF;
+    flex-basis: 80%;
+    flex-wrap: wrap;
+    font-size: xx-large;
+    font-weight: bold;
+    padding-left: 7%;
+}
+
+.button-container {
+    display: flex; 
+    flex-direction: column; 
+    flex-basis: 20%; 
+    color: #FFFFFF;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cell-item {
+    display: flex;
+    flex-basis: 33.33%;
+    justify-content: center;
+    align-items: center;
+    height: 155px;
+}
+
+.action-button {
+    background-color: #72C3DC;
+    color: #FFFFFF;
+    padding: 5px;
+    width: 120px;
+    border-radius: 4px;
+    border: 0;
+    border-bottom: 2px solid #2B8EAD;
+    margin: 10px;
+}
+
+.main-container {
+    display: flex;
+}
+
+.cell-3, .cell-5, .cell-9 {
+    background-color: #2F454E;
+}
+
+.cell-2, .cell-4 {
+    background-color: #2B8EAD;
+}
+
+.cell-1, .cell-8 {
+    background-color: #6F98A8;
+}
+
+.cell-6, .cell-7 {
+    background-color: #BFBFBF;
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        background-color: #FFFFFF;
+    }
+
+    .cell-container {
+        flex-direction: column;
+        flex: auto;
+        height: auto;
+        padding-left: 0;
+    }
+
+    .main-container {
+        flex-direction: column-reverse;
+        padding: 10px;
+    }
+
+    .cell-item {
+        flex: auto;
+        height: auto;
+        color: #000000;
+        margin-bottom: 10px;
+    }
+
+    .cell-3, .cell-5, .cell-9 {
+        background: -webkit-linear-gradient(left, #2F454E 0%, #2F454E 3%, #EFEFEF 4%, #EFEFEF 100%);
+    }
+    
+    .cell-2, .cell-4 {
+        background: -webkit-linear-gradient(left, #2B8EAD 0%, #2B8EAD 3%, #EFEFEF 4%, #EFEFEF 100%);
+    }
+    
+    .cell-1, .cell-8 {
+        background: -webkit-linear-gradient(left, #6F98A8 0%, #6F98A8 3%, #EFEFEF 4%, #EFEFEF 100%);
+
+    }
+    
+    .cell-6, .cell-7 {
+        background-color: #BFBFBF;
+        background: -webkit-linear-gradient(left, #BFBFBF 0%, #BFBFBF 3%, #EFEFEF 4%, #EFEFEF 100%);
+    }
+
+    h1 {
+        background-color: black;
+        color: #FFFFFF;
+    }
+
+    .button-container {
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .action-button {
+        width: 90px;
+        height: 40px;
+        max-width: 100%;
+    }
+
+    .heading {
+        margin: 0;
+        padding: 10px;  
+    }
+}   
