@@ -1,5 +1,6 @@
 body {
     background-color: #EFEFEF;
+    font-family: sans-serif;
 }
 
 .heading {
@@ -63,6 +64,52 @@ body {
 
 .cell-6, .cell-7 {
     background-color: #BFBFBF;
+}
+
+.heading .header-tooltip {
+    display: none;
+    background: #ffffe0;
+    color: #2F454E;
+    border: 1px solid #d1d1d1;
+    border-radius: 3px;
+    font-size: 14px;
+    right: 30px;
+    left: 62%;
+    opacity: 0.9;
+    padding: 10px;
+    position: absolute;
+    width: 260px;
+    z-index: 1000;
+}
+
+.heading .header-tooltip:before {
+    bottom: 4px;
+    content: " ";
+    display: block;
+    left: -22px;
+    position: absolute;
+    border-color:  transparent #a9a9a9 transparent transparent;
+    border-style: solid;
+    border-width: 11px;
+}
+  
+.heading .header-tooltip:after {
+    border-right: solid #ffffe0 10px;
+    border-top: solid transparent 10px;
+    border-bottom: solid transparent 10px;
+    bottom: 5px;
+    content: " ";
+    height: 0;
+    left: 1%;
+    margin-left: -13px;
+    position: absolute;
+    width: 0;
+}
+
+@media screen and (min-width: 1100px) {
+    .heading:hover .header-tooltip {
+        display: block;
+    }
 }
 
 @media screen and (max-width: 375px) {

@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-    <h1 class="heading">Shuffle and Sort</h1>
+    <div class="heading">
+        <h1>Shuffle and Sort</h1>
+        <div class="header-tooltip">Update the boxes on click of the button SHUFFLE or SORT.</div>
+    </div>
 
     <div class="main-container" style="display: flex;">
         <div id="mainDiv" class="cell-container">
         </div>
         <div id="buttonDiv" class="button-container">
-            <div>
-                <button class="action-button" onclick="shuffle()">SHUFFLE</button>
-            </div>
-            <div>
-                <button class="action-button" onclick="sort()">SORT</button>
-            </div>
+            <button class="action-button" onclick="shuffle()">SHUFFLE</button>
+            <button class="action-button" onclick="sort()">SORT</button>
         </div>
     </div>
 
